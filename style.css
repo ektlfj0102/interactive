@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+*{
+			font-family: Arial;
+		}
+		body{
+			margin: 0 auto;
+			padding: 0;
+			min-width: 100%;
+		}
+		header{
+            width: 100%;
+            height: 100px;
+            box-shadow: 0 0 10px 0;
+            position: fixed;
+            top: -10px;
+            left: 0;
+            background: white;
+		}
+		header>#logo>p{
+            font-size: 1.5em;
+            float: left;
+            margin-top: 40px;
+            letter-spacing: 3px;
+		}
+        header>#logo>p:hover{
+            background: #eaeaea;
+        }
+		header>#logo>p>span{
+			font-weight: 900;
+			margin:0 10px 0 10px;
+		}
+		header>nav{
+			float: right;
+			margin-top: 25px;
+            letter-spacing: 3px;
+		}
+		header>nav>h1{
+			float: left;
+			margin: 10px;
+			font-size: 1.25em;
+			font-weight: 400;
+			width: 100px;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+		}
+		header>nav>h1>a{
+			text-decoration: none;
+			color: black;
+		}
+		header>nav>h1:hover{
+			background: #eaeaea;
+		}
+		section{
+			width: 80%;
+		    margin: 0 auto;
+		   /* border: 1px solid black;*/
+
+		}
+		section>img{
+			width: 100%;
+			margin-top: 30px;
+		}
+		section>h1{
+			border-bottom: 1px solid #eaeaea;
+			padding-bottom: 20px;
+			font-size: 1.5em; 
+		}
+		section>#house{
+			width: 100%;
+			padding-left: 1.5%;
+		}
+		section>#house>img{
+			width: 24%;
+			
+		}
+		section>#people{
+			width: 100%;
+			padding-left: 1.5%;
+			padding-bottom: 50px;
+		}
+		section>#people>div{
+			width: 23%;
+			float: left;
+			padding-bottom: 50px;
+            margin-left: 10px;
+
+
+
+		}
+        section>#people>div:first-child{
+            margin-left: 20px;
+        }
+		section>#people>div>img{
+			width: 100%;
+			height: 100%;
+
+		}
+		.contact{
+			width: 97%;
+			background: #eaeaea;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			font-size: 1.25em;
+/*            margin: 0 auto;*/
+            padding-left: 1%;
+		}
+		.contact:hover{
+			background: #777;
+		}
+		#title{
+			margin-top: 50px;
+        }
+
+        footer{
+        	width: 100%;
+        	background: black;
+        	height: 100px;
+        	color: white;
+        	text-align: center;
+        	line-height: 100px;
+        }
+        #contact2>form>input{
+        	display: block;
+        	width: 97%;
+        	height: 40px;
+        	margin: 10px;
+        	font-size: 1.125em;
+        	padding-left: 10px;
+        }
+        #contact2>form>button{
+        	width: 10%;
+        	height: 40px;
+        	background: black;
+        	margin-left: 10px;
+        	color: white;
+        	font-size: 0.875em;
+        	outline: none;
+        }
+        #contact2>form>button:hover{
+        	background: #eaeaea;
+        	color: black;
+        }
+        footer{
+        	margin-top: -5px;
+
+        }
+
+        @media(max-width: 1000px){
+             section>#people>div{
+             	width: 46%;
+             	/*padding-left: 0;*/
+             	
+             }
+             section>#people>#john{
+             	width: 45%;
+             }
+             #title{
+             	width: 100%;
+             	clear: both;
+             }
+             section>#house>img{
+             	width: 48%;
+             }
+             #contact2>form>button{
+             	font-size:0.5em; 
+             }
+             header>nav>h1{
+             	font-size: 1em;
+             }
+        }
+        @media(max-width: 600px){
+        	section>#people>div{
+             	width: 100%;
+             	/*padding-left: 0;*/
+             	
+             }
+             section>#people>#john{
+             	width: 100%;
+             }
+             #title{
+             	width: 100%;
+             	clear: both;
+             }
+             section>#house>img{
+             	width: 100%;
+                
+             }
+             #contact2>form>button{
+             	font-size:0.425em; 
+             	width: 20%
+             }
+             header>nav>h1{
+             	display: none;
+             }
+             /*section>#house>#react{
+                display: block;
+             }*/
+
+
+        }
+
+        @media(max-width: 450px){
+            section>#house>#react{
+                display: block;
+             }
+             section>#house>img{
+                width: 100%;
+                display: none;  
+             }
+        }
+
+      
+        #title{
+            clear: both;
+        }
+
+        #react{
+            width: 100%;
+            height: 70px;
+            background: black;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            line-height: 70px;
+            display: none;
+            margin: 10px 0;
+        }
